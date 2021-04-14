@@ -40,11 +40,11 @@ header {
     width:100%; 
 }
 
-.nav-bar img {
+/* .nav-bar img {
     margin-top:12px;
     margin-left:12px;
     height:70px;
-}
+} */
 
 .header-content {
     display:flex;
@@ -271,8 +271,9 @@ footer {
     height:auto;
     padding:2%;
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
+    text-align:center;
 }
 
 footer p {
@@ -322,4 +323,183 @@ h4 {
 
 
 
+@media only screen and (max-width: 1503px) {
+
   
+    h6 {
+        font-family: Fira code;
+        font-size: 20px;
+        color:#00A39C;
+        text-decoration: none;
+        font-weight:500;
+        text-align:center;
+    }
+
+    h1 {
+        font-family: Poppins;
+        font-size:60px;
+        color:white;
+        font-weight:700;
+        text-transform:uppercase;
+        letter-spacing:1px;
+        margin-top:20px;
+        margin-left:20px;
+        height:75px;
+        display:inline-block;
+
+        
+    }
+
+    .nav-bar {
+        position:sticky;
+        background-color:black;
+        height: auto;
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around; 
+        width:100%; 
+    }
+
+    .nav-links {
+        margin:auto;
+        padding-bottom:10px;
+        text-align:center;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 1288px) {
+
+    .project-info {
+        background-color: black;
+        color:white;
+        height: 250px;
+        display:flex;
+        flex-direction:column;
+
+     
+    }
+
+    .project-info a, .project-info a:active , .project-info a:visited{
+        margin-bottom:8px;
+     }
+
+     h3 {
+        font-family: Poppins;
+        font-size:18px;
+        color:white;
+        font-weight:700;
+        text-transform:uppercase;
+        text-align:center;
+        letter-spacing:1px;
+    
+    }
+    .project-info p {
+        margin-bottom:30px;
+        font-size:11px;
+    }
+
+    h4 {
+        font: bold 200% Fira Code;
+        color:black;
+        border-right: 0.1em solid;
+        width: 16.5em;
+        width: 23ch;
+        margin: 2em 3em;
+        /* white-space: nowrap; */
+        overflow: hidden;
+        animation: typing 3s steps(26, end),
+        cursor-blink 0.3s step-end infinite alternate;
+        display:block;
+    }
+
+}
+
+
+@media only screen and (max-width: 844px) {
+
+    .nav-bar {
+        display:flex;
+        justify-content: space-around;
+    }
+    
+    h1 {
+        font-family: Poppins;
+        font-size:35px;
+        color:white;
+        font-weight:700;
+        text-transform:uppercase;
+        letter-spacing:1px;
+        margin-top:20px;
+        margin-left:20px;
+        height:75px;
+        display:inline-block;
+        text-align:center;
+    
+        
+    }
+
+    .nav-links {
+        margin:auto;
+   
+   
+   }
+   .nav-links a {
+       font-family: Fira code;
+       font-size: 16px;
+       color:white;
+       text-decoration: none;
+       font-weight:500;
+       padding:5px;
+       margin-left: 0px;
+   }
+      
+
+       .project-info {
+        background-color: black;
+        color:white;
+        height: 225px;
+        display:flex;
+        flex-direction:column;
+
+}
+     
+h4 {
+    font: bold 150% Fira Code;
+    color:black;
+    border-right: 0.1em solid;
+    width: 16.5em;
+    width: 23ch;
+    margin: 2em 3em;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    animation: typing 3s steps(26, end),
+    cursor-blink 0.3s step-end infinite alternate;
+    display:block;
+}
+
+.contact {
+    background-color:white;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    padding-left:3%;
+    padding-right:3%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.social img {
+    width:50px;
+    height:50px;
+
+}
+
+
+}
