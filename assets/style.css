@@ -1,0 +1,311 @@
+body {
+    margin:0;
+ 
+}
+
+p { 
+    font-family: Fira Mono;
+    font-size:13px;
+    font-weight:500;
+}
+
+img {
+    filter: grayscale(100%);
+  }
+
+
+header {
+    background-image: url(./images/hero4.png);
+    background-size:cover;
+    height: 100vh;
+    /* max-height:600px; */
+    background-position: top;
+    background-attachment: fixed;
+
+
+}
+
+.nav-bar {
+    position:sticky;
+    background-color:black;
+    height: auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between; 
+    width:100%; 
+}
+
+.nav-bar img {
+    margin-top:12px;
+    margin-left:12px;
+    height:70px;
+}
+
+.header-content {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    height: 85vh;
+}
+
+
+ h1 {
+    font-family: Poppins;
+    font-size:60px;
+    color:white;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-top:20px;
+    margin-left:20px;
+    height:75px;
+    display:inline-block;
+
+    
+}
+
+h2 {
+    font-family: Poppins;
+    font-size:60px;
+    color:black;
+    font-weight:700;
+    text-transform:uppercase;
+    display:inline-block;
+    padding:0px 10px 0px 10px;
+    border-bottom: 8px solid black;
+    margin-bottom:10px;
+    text-align:center;
+
+}
+.work h2 {
+    color:white;
+    border-bottom: 8px solid white;
+}
+
+
+span {
+    color:#00A39C;
+}
+
+h3 {
+    font-family: Poppins;
+    font-size:20px;
+    color:white;
+    font-weight:700;
+    text-transform:uppercase;
+    text-align:center;
+    letter-spacing:1px;
+
+}
+
+h5 {
+    font-family: Poppins;
+    font-size:60px;
+    color:white;
+    font-weight:700;
+    text-transform:uppercase;
+
+}
+
+.nav-links {
+     margin-right:50px;
+     margin-top:40px;
+
+
+}
+.nav-links a {
+    font-family: Fira code;
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    font-weight:500;
+    padding:5px;
+    margin-left: 20px;
+   
+}
+.nav-links a:hover {
+    color: #00A39C;
+    font-weight:700;
+    padding-bottom:5px;
+    transition: 0.2s ease-in;
+}
+
+
+
+.about {
+    background-color:white;
+    height:auto;
+    padding:3%;
+    color:#7E7E7E;
+    font-size: 18px;  
+    text-align:center; 
+    margin-left:10%;
+    margin-right:10%;
+
+    
+  }
+
+.about p {
+    
+    text-align:justify;
+}
+
+
+.skills {
+    background-color:#353535;
+    height:85px;  
+  }
+
+
+.work {
+    padding:3%;
+    background-color:#00A39C;
+    text-align:center;
+    font-size:12px;
+}
+
+.contact {
+    background-color:white;
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:3%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.contact span {
+    color:#353535
+}
+
+h6 {
+    font-family: Fira code;
+    font-size: 20px;
+    color:#00A39C;
+    text-decoration: none;
+    font-weight:500;
+    padding:5px;
+}
+
+.social {
+    background-color:white;
+    height: auto;
+    display:flex;
+    justify-content: space-between;
+    padding:3%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom:3%;
+}
+
+.social img {
+width:75px;
+height:75px;
+
+}
+
+.social img:hover {
+    opacity: 0.5;
+    transition: 0.3s ease-in;
+    
+    }
+
+.projects {
+    margin-top:2%;
+
+}
+
+.project-info {
+    background-color: black;
+    color:white;
+    height: 175px;
+ 
+}
+
+.project-info p {
+    margin-bottom:30px;
+}
+
+.project-info a, .project-info a:active , .project-info a:visited{
+    font-family:Poppins;
+    font-size:16px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color: white;
+    background-color:#353535;
+    margin-right:10px;
+    margin-left:10px;
+    padding:5px 10px 5px 10px;
+    text-align:center;
+    text-decoration:none;
+    transition: 0.3s ease-in;
+}
+
+.project-info a:hover {
+    background-color:#00A39C;
+    color:white;
+    border: 0px solid #996164;
+    text-decoration:none;
+}  
+
+footer {
+    background-color:black;
+    height:auto;
+    padding:2%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+footer p {
+    font-family: poppins;
+    text-align:center;
+    color: white;
+    font-size: 12px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+
+}
+
+footer span {
+    color:#00A39C;
+    font-weight:700;
+}
+
+
+
+/* Header Text Animation. */
+
+h4 {
+    font: bold 400% Fira Code;
+    color:black;
+    border-right: 0.1em solid;
+    width: 16.5em;
+    width: 23ch;
+    margin: 2em 3em;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    animation: typing 3s steps(26, end),
+    cursor-blink 0.3s step-end infinite alternate;
+    display:block;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes cursor-blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+
+  
