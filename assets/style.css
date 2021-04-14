@@ -268,12 +268,11 @@ h6 {
 
 footer {
     background-color:black;
-    height:auto;
+    height:auto; 
     padding:2%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
     text-align:center;
+    margin:auto;
+
 }
 
 footer p {
