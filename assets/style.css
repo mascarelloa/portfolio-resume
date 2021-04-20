@@ -94,12 +94,13 @@ span {
 
 h3 {
     font-family: Poppins;
-    font-size:20px;
+    font-size:30px;
     color:white;
     font-weight:700;
     text-transform:uppercase;
     text-align:center;
     letter-spacing:1px;
+    margin:0px;
 
 }
 
@@ -302,15 +303,15 @@ h6 {
     height: 100%;
   }
   
-  .text {
+  .project-title {
     font-family:Poppins;
-    font-size:16px;
+    font-size:30px;
     font-weight:700;
     text-transform:uppercase;
     letter-spacing:2px;
     color: white;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 0%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -318,6 +319,45 @@ h6 {
     text-align: center;
   }
 
+  .project-info {
+    position:relative;
+    top:21%;
+    margin-left:3%;
+    margin-right:3%;
+  }
+  
+  .project-info a, .project-info a:active , .project-info a:visited{
+    font-family:Poppins;
+    font-size:18px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color: white;
+    background-color:#00A39C;
+    margin-right:10px;
+    margin-left:10px;
+    padding:5px 10px 5px 10px;
+    position: relative;
+    /* top: 20%; */
+    text-align:center;
+    text-decoration:none;
+    transition: 0.3s ease-in;
+}
+
+.project-info a:hover {
+    background-color:#7E7E7E;
+    color:white;
+    border: 0px solid #996164;
+    text-decoration:none;
+} 
+
+.project-info p {
+    color:#DBDBDB;
+    margin-top:5px;
+    margin-left:3%;
+    margin-right:3%;
+    font-size:16px;
+}
 
 
 
@@ -391,6 +431,13 @@ h4 {
         text-align:center;
     }
 
+
+
+}
+
+
+@media only screen and (max-width: 1350px) {
+
     h1 {
         font-family: Poppins;
         font-size:60px;
@@ -425,28 +472,31 @@ h4 {
 
     }
 
-}
-
-
-@media only screen and (max-width: 1288px) {
-
-    .project-info {
-        background-color: black;
-        color:white;
-        height: 250px;
-        display:flex;
-        flex-direction:column;
-
-     
+    h4 {
+        font: bold 300% Fira Code;
+        color:black;
+        border-right: 0.1em solid;
+        width: 16.5em;
+        width: 23ch;
+        margin: 2em 3em;
+        /* white-space: nowrap; */
+        overflow: hidden;
+        animation: typing 3s steps(26, end),
+        cursor-blink 0.3s step-end infinite alternate;
+        display:block;
     }
 
+}
+
+    @media only screen and (max-width: 1288px) {
+
     .project-info a, .project-info a:active , .project-info a:visited{
-        margin-bottom:8px;
-     }
+        font-size:16px;
+    }
 
      h3 {
         font-family: Poppins;
-        font-size:18px;
+        font-size:20px;
         color:white;
         font-weight:700;
         text-transform:uppercase;
@@ -456,7 +506,7 @@ h4 {
     }
     .project-info p {
         margin-bottom:30px;
-        font-size:11px;
+        font-size:12px;
     }
 
     h4 {
@@ -472,33 +522,51 @@ h4 {
         cursor-blink 0.3s step-end infinite alternate;
         display:block;
     }
+    
 
 }
 
 
-@media only screen and (max-width:980px) {
+
+
+@media only screen and (max-width:1100px) {
     .project {
         position: relative;
         width: 45%;
         margin-bottom:2%;
       }
+
+      .project-info a, .project-info a:active , .project-info a:visited{
+        font-size:18px;
+    }
+
+     h3 {
+        font-family: Poppins;
+        font-size:25px;
+        color:white;
+        font-weight:700;
+        text-transform:uppercase;
+        text-align:center;
+        letter-spacing:1px;
+    
+    }
+    .project-info p {
+        margin-bottom:30px;
+        font-size:14px;
+    }
 }
 
-@media only screen and (max-width: 844px) {
+@media only screen and (max-width: 850px) {
 
-    .nav-bar {
-        display:flex;
-        justify-content: space-around;
-    }
     
     h1 {
         font-family: Poppins;
-        font-size:35px;
+        font-size:40px;
         color:white;
         font-weight:700;
         text-transform:uppercase;
         letter-spacing:1px;
-        margin-top:20px;
+        margin-top:45px;
         margin-left:20px;
         height:75px;
         display:inline-block;
@@ -523,14 +591,20 @@ h4 {
    }
       
 
-       .project-info {
-        background-color: black;
-        color:white;
-        height: 225px;
-        display:flex;
-        flex-direction:column;
+   .project-info a, .project-info a:active , .project-info a:visited{
+    font-size:14px;
+}
+
+ h3 {
+    font-size:20px;
+
 
 }
+.project-info p {
+    font-size:12px;
+}
+
+
      
 h4 {
     font: bold 150% Fira Code;
@@ -569,10 +643,23 @@ h4 {
 }
 
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:680px) {
     .project {
         position: relative;
         width: 100%;
         margin-bottom:2%;
       }
+
+
+      .project-info a, .project-info a:active , .project-info a:visited{
+        font-size:20px;
+    }
+    
+     h3 {
+        font-size:35px;
+    
+    }
+    .project-info p {
+        font-size:18px;
+    }
 }
